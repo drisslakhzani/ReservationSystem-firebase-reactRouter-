@@ -47,7 +47,7 @@ function Contact() {
           </div>
   
           <div className="flex flex-col items-center lg:flex-row justify-center">
-            <div className="lg:w-1/3 p-4">
+            <div className="ml-8 lg:w-2/4 p-4">
               <InformationSection />
             </div>
             <div className="lg:w-1/2 p-4">

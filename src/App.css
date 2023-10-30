@@ -35,3 +35,22 @@
     transition: filter 0.5s; /* Add a smooth transition effect */
   }
   
+  .bg2 {
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+                url("/public/images/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; /* You can adjust the sizing as needed */
+    z-index:-1;
+} .redius{
+    border-radius: 0 50px 0 0 ;
+}
+.small-bg{
+    border-radius: 0 50px 0 50px ;
+}
+.small1-bg{
+    border-radius:  50px 0 50px 0 ;
+}
+.redius1{
+    border-radius:  50px 0 0 0 ;
+}

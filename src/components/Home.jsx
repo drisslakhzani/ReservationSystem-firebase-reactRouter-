@@ -1,39 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
+  const [isHover,setIsHover]=useState(false);
+  const MouseIn=()=>{
+    setIsHover(true)
+  }
+  const MouseOut=()=>{
+    setIsHover(false)
+  }
   return (
-//     <div
-//   class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
-//   style={{
-//     backgroundImage: "url('./images/logo_0.png')",
-//     height: "400px",
-//   }}
-// >
-//   <div
-//     class=" h-full w-full overflow-hidden bg-fixed"
-//     style={{
-//       backgroundColor: "rgba(0, 0, 0, 0.6)",
-//     }}
-//   >
-//     <div class="flex h-full items-center justify-center">
-//       <div class="text-white">
-//         <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
-//         <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
-//         <button
-//           type="button"
-//           class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover-bg-neutral-500 hover-bg-opacity-10 hover-text-neutral-100 focus-border-neutral-100 focus-text-neutral-100 focus-outline-none focus-ring-0 active-border-neutral-200 active-text-neutral-200 dark-hover-bg-neutral-100 dark-hover-bg-opacity-10"
-//           data-te-ripple-init
-//           data-te-ripple-color="light"
-//         >
-//           Call to action
-//         </button>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-
-  <div></div>
-  )
+    <section className="page">
+      <div className=" h-screen flex w-screen justify-center items-center bg">
+        <div className={`${isHover&&"backdrop-blur-sm "} duration-200 flex flex-col items-center justify-center h-screen w-screen $ p-4 rounded-lg relative `}>
+          <h1 onMouseEnter={MouseIn} onMouseLeave={MouseOut} className="text-4xl  text-white font-bold p-3  ">Bienvenue à la Clinique du Diabète</h1>
+          <p  onMouseEnter={MouseIn} onMouseLeave={MouseOut} className="w-4/5 text-gray-200 text-center p-4 font-medium">Nous sommes heureux de vous présenter la Clinique du Diabète, votre référence en matière de soins ambulatoires spécialisés de qualité. Notre équipe dédiée est à vos côtés à chaque étape de votre parcours, que vous souffriez de diabète de type 1, de type 2 ou de diabète gestationnel. Votre santé et votre bien-être sont au cœur de nos préoccupations.</p>
+          <Link onMouseEnter={MouseIn} onMouseLeave={MouseOut} className="bg-blue-500 p-3 hover:bg-blue-600 font-medium duration-100 rounded-sm text-lg text-white " to="/Contact">
+            Contact Us
+          </Link>
+        </div>
+      </div>
+      <div className="h-screen w-screen bg-white z-10"></div>
+    </section>
+  );
 }
 
-export default Home
+export default Home;

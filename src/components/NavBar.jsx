@@ -78,29 +78,29 @@ function NavBar() {
   };
 
   return (
-    <section className='sticky'>
+    <section className='sticky z-50'>
       {!isScrolled && (
-        <aside className={`bg-gradient-to-r from-blue-400 to-blue-500  transform opacity-${!isScrolled ? 100 : 0} transition-opacity duration-300 fixed top-0 w-full`}>
+        <aside className={`text-white bg-gradient-to-r from-blue-400 to-blue-500  transform opacity-${!isScrolled ? 100 : 0} transition-opacity duration-300 fixed top-0 w-full`}>
           <span>
 
           </span>
           <span className="flex text-2xl mr-2">
           <a href=""><FontAwesomeIcon
-              className="p-1 cursor-pointer hover:text-white duration-200"
+              className="p-1 cursor-pointer hover:text-black duration-200"
               icon={faFacebookSquare}/> </a>
              <a href=""><FontAwesomeIcon
-              className="p-1 cursor-pointer hover:text-white duration-200"
+              className="p-1 cursor-pointer hover:text-black duration-200"
               icon={faTwitterSquare}/> </a>
 
             <a href=""><FontAwesomeIcon
-              className="p-1 cursor-pointer hover:text-white duration-200"
+              className="p-1 cursor-pointer hover:text-black duration-200"
               icon={faInstagramSquare}/> </a>
 
             <a href="contact.cliniquedudiabete@gmail.com"><FontAwesomeIcon
-            className="p-1 cursor-pointer hover:text-white duration-200"
+            className="p-1 cursor-pointer hover:text-black duration-200"
             icon={faGooglePlusSquare}/> </a>
 
-             <span className=' hover:text-white duration-200 text-lg mb-1 ml-3 flex items-center justify-center '><FontAwesomeIcon
+             <span className=' hover:text-black duration-200 text-lg mb-1 ml-3 flex items-center justify-center '><FontAwesomeIcon
               className="pr-1 "
               icon={faPhone}/>+222 49 86 86 24 </span>
 

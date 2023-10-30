@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
+  },
+  utilities:{
+    'bg-image':{
+      'background-image':'url("./image/logo_0.png")'
+    }
   },
   plugins: [],
 }

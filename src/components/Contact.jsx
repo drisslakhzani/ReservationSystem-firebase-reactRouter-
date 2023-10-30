@@ -33,7 +33,7 @@ function Contact() {
   
   
     return (
-      <section className=" bg-opacity-20 bg-gray-900 text-white"
+      <section className="bg bg-opacity-20 bg-gray-900 text-white"
       >
         <h1 className="p-4 font-bold text-6xl  text-white pt-40 text-center">Contact</h1>
   

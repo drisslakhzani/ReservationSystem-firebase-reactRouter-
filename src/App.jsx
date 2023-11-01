@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
 import Home from './components/Home';
+import Login from './backend/Login_auth';
 
 function App(){
     return (
@@ -16,6 +17,7 @@ function App(){
                 <Route path='/' element={<Home/>}/>
                 <Route path='/Contact' element={<Contact/>}/>
                 <Route path='/About' element={<About/>}/>
+                <Route path='/login' element={<Login/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>

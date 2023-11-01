@@ -10,7 +10,7 @@ function Home() {
     setIsHover(false)
   }
   return (
-    <section className="page bg-slate-600">
+    <section className="page bg-slate-300">
       <div className=" h-screen flex w-screen justify-center items-center bg">
         <div className={`${isHover&&"backdrop-blur-sm "} duration-200 flex flex-col items-center justify-center h-screen w-screen  p-4 rounded-lg relative z-10 `}>
           <h1 onMouseEnter={MouseIn} onMouseLeave={MouseOut} className="text-4xl  text-white font-bold p-3  ">Bienvenue à la Clinique du Diabète</h1>
@@ -20,7 +20,7 @@ function Home() {
           </Link>
         </div>
       </div>
-      <aside className={` w-screen  bg2 flex flex-col items-center justify-center z-20  rounded-xl relative top-20`} >
+      <aside className={` w-screen  bg2 flex flex-col items-center justify-center z-20 rounded-3xl relative top-10`} >
         <div className={`${isHover&&"backdrop-blur-sm"} duration-200 relative py-10 z-30 w-screen h-screen  flex flex-col items-center justify-center`}>
             <div onMouseEnter={MouseIn} onMouseLeave={MouseOut} className='bg-white mt-5  h-72 w-4/5 small-bg flex justify-between shadow-xl'>
                 <span className=' ml-3 flex flex-col justify-center items-center'>

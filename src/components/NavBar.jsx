@@ -4,7 +4,8 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from '@fortawesome/free-brands-svg-icons';
-import { faAngleDown, faAngleUp, faBars, faCross, faPhone, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
+import { faAngleDown, faAngleUp, faBars, faCross, faPhone, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -80,10 +81,8 @@ function NavBar() {
   return (
     <section className='sticky z-50'>
       {!isScrolled && (
-        <aside className={`text-white bg-gradient-to-r from-blue-400 to-blue-500  transform opacity-${!isScrolled ? 100 : 0} transition-opacity duration-300 fixed top-0 w-full`}>
-          <span>
-
-          </span>
+        <aside className={` flex justify-between text-white bg-gradient-to-r from-blue-400 to-blue-500  transform opacity-${!isScrolled ? 100 : 0} transition-opacity duration-300 fixed top-0 w-full`}>
+          
           <span className="flex text-2xl mr-2">
           <a href=""><FontAwesomeIcon
               className="p-1 cursor-pointer hover:text-black duration-200"
@@ -106,6 +105,11 @@ function NavBar() {
 
             
           </span>
+
+          <span>
+              <Link to="/login" ><FontAwesomeIcon icon={faUser} className="text-2xl p-1 cursor-pointer hover:text-black duration-200" /></Link>
+          </span>
+
         </aside>
       )}
       <aside
@@ -115,9 +119,9 @@ function NavBar() {
       >
         <span className="ml-10 flex items-center">
 
-          <img
-            className="ml-3 pt-2 h-16 w-32"
-            src="./images/logo_2.png"
+        <img
+            className="ml-1 pt-2 h-20 w-60"
+            src="./images/logo_1.png"
             alt="./images/logo_2.png"
           />
           
@@ -127,10 +131,11 @@ function NavBar() {
             alt="./images/logo_0.png"
           />
           <img
-            className="ml-1 pt-2 h-20 w-60"
-            src="./images/logo_1.png"
+            className="ml-1 pt-2 h-16 w-32"
+            src="./images/logo_2.png"
             alt="./images/logo_2.png"
           />
+          
         </span>
 
 
